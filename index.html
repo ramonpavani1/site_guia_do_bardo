@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guia do Bardo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo-container">
+                <img src="imagens\dice_lgo.png" alt="Logo" class="logo">
+                <h1>Guia do Bardo</h1>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="content-wrapper">
+            <div class="sections">
+                <section id="classes" class="section-button" onclick="showContent('classesContent')">
+                    <h2>Classes</h2>
+                </section>
+                <section id="monstros" class="section-button" onclick="showContent('monstrosContent')">
+                    <h2>Monstros</h2>
+                </section>
+                <section id="dados" class="section-button" onclick="showContent('dadosContent')">
+                    <h2>Dados</h2>
+                </section>
+                <section id="sistemas" class="section-button" onclick="showContent('sistemasContent')">
+                    <h2>Sistemas</h2>
+                </section>
+            </div>
+
+            <div class="content-display">
+                <div id="classesContent" class="content">
+                    <h2>Classes Famosas de RPG</h2>
+                    <p><img class="classesImg" src="imagens\warrior.jpg" alt="Guerreiro"><strong>Guerreiro:</strong> Especialista em combate corpo a corpo. Utiliza uma grande variedade de armas e armaduras.</p>
+                    <p><img class="classesImg" src="imagens\mage.jpg" alt="Dragão"><strong>Mago:</strong> Conjurador de feitiços com grande poder à distância, mas frágil fisicamente.</p>
+                    <p><img class="classesImg" src="imagens\thief.jpg" alt="Dragão"><strong>Ladino:</strong> Mestre em ataques furtivos e exploração.</p>
+                    <p><img class="classesImg" src="imagens\cleric.jpg" alt="Dragão"><strong>Clérigo:</strong> Conjurador divino, capaz de curar seus aliados e lutar com eficácia.</p>
+                    <p><img class="classesImg" src="imagens\babarian.jpg" alt="Dragão"><strong>Bárbaro:</strong> Um guerreiro movido pela fúria, com resistência natural a danos.</p>
+                </div>
+
+                <div id="monstrosContent" class="content">
+                    <h2>Bestiário</h2>
+                    <p><img class="bestiary" src="imagens/dragon.jpg" alt="Dragão"><strong>Dragão:</strong> Criatura lendária e poderosa, muitas vezes associada a grandes tesouros e desafios épicos.</p>
+                    <p><img class="bestiary" src="imagens/goblin.jpg" alt="Goblin"><strong>Goblin:</strong> Pequeno e astuto, frequentemente encontrado em grupos e conhecido por suas travessuras.</p>
+                    <p><img class="bestiary" src="imagens/orc.jpg" alt="Orc"><strong>Orc:</strong> Criatura robusta e feroz, muitas vezes um inimigo temido nas batalhas.</p>
+                    <p><img class="bestiary" src="imagens/grifo.jpg" alt="Grifo"><strong>Grifo:</strong> Criatura mítica com corpo de leão e cabeça de águia, geralmente associada a lendas e guardiões.</p>
+                    <p><img class="bestiary" src="imagens/espectro.jpg" alt="Espectro"><strong>Espectro:</strong> Espírito ou fantasma que assombra locais, conhecido por suas habilidades de assombração e invisibilidade.</p>
+                </div>
+
+                <div id="dadosContent" class="content">
+                    <h2>Dados de RPG</h2>
+                    <p><strong>D20 (20 lados):</strong> O dado mais usado para ações importantes.</p>
+                    <p><strong>D12 (12 lados):</strong> Usado para armas pesadas.</p>
+                    <p><strong>D10 (10 lados):</strong> Usado para porcentagens.</p>
+                    <p><strong>D8 (8 lados):</strong> Usado para danos de armas médias.</p>
+                    <p><strong>D6 (6 lados):</strong> Clássico em jogos de tabuleiro, usado para armas menores.</p>
+                    <p><strong>D4 (4 lados):</strong> Para armas pequenas ou feitiços menores.</p>
+                </div>
+
+                <div id="sistemasContent" class="content">
+                    <h3>Sistemas</h3>
+                    <p><strong>Dungeons & Dragons (D&D):</strong> O RPG mais famoso, com uso predominante do D20.</p>
+                    <p><strong>Pathfinder:</strong> Um sistema derivado de D&D, com mais opções de personalização.</p>
+                    <p><strong>GURPS:</strong> Sistema genérico para qualquer cenário.</p>
+                    <p><strong>Vampiro: A Máscara:</strong> RPG de horror onde os jogadores são vampiros.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Guia do Bardo.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
