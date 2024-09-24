@@ -1,0 +1,209 @@
+/* Importação das fontes */
+@import url('https://fonts.googleapis.com/css2?family=Uncial+Antiqua&family=Roboto:wght@300;400&display=swap');
+
+/* Estilo Geral do Body */
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #1c1c1c;
+    color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar Estilizada */
+header {
+    background-color: #1c1c1c;
+    color: #e0c097;
+    padding: 15px 20px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.nav-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.logo {
+    width: 120px;
+    height: auto;
+}
+
+h1 {
+    margin: 0;
+    font-family: 'Uncial Antiqua', serif;
+    font-size: 28px;
+    color: #e0c097;
+    letter-spacing: 1px;
+}
+
+/* Estilo do Conteúdo */
+.content-wrapper {
+    display: flex;
+    max-width: 1300px;
+    height: 800px;
+    margin: 150px auto 40px;
+    padding: 20px;
+    background-color: #333;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    align-self: center;
+}
+
+.sections {
+    width: 250px;
+    margin-right: 20px;
+}
+
+.section-button {
+    background-color: #4b3832;
+    margin-bottom: 75px;
+    padding: 20px;
+    cursor: pointer;
+    align-self: center;
+    text-align: center;
+    font-family: 'Uncial Antiqua', serif;
+    font-size: 22px;
+    color: #e0c097;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+}
+
+.section-button:hover {
+    background-color: #624a48;
+    border-color: #e0c097;
+    transform: scale(1.05);
+}
+
+.content-display {
+    flex-grow: 1;
+    padding: 20px;
+    background-color: #2e2e2e;
+    border-radius: 12px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
+    position: relative;
+}
+
+.content {
+    display: none;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: opacity 0.4s ease, transform 0.4s ease;
+}
+
+.content.active {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+
+/* Estilo para o conteúdo com imagem ao lado do texto */
+.content-display img {
+    width: 200px; /* Ajuste o tamanho da imagem conforme necessário */
+    height: auto;
+    margin-right: 20px;
+    vertical-align: middle;
+}
+
+.content-display p {
+    display: flex;
+    align-items: center;
+    margin: 0 0 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #dcdcdc;
+    background-color: #3a3a3a;
+    border-left: 5px solid #e0c097;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+.content-display p img {
+    margin-right: 10px;
+}
+
+.content img {
+    border-radius: 12px;
+    width: 50px;
+    height: auto;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.content img:hover {
+    transform: scale(1.05) rotate(1deg);
+    filter: brightness(1.2);
+}
+
+.content h2, .content h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    font-family: 'Uncial Antiqua', serif;
+    color: #e0c097;
+    font-size: 32px;
+    position: relative;
+}
+
+.content h2::after, .content h3::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 50%;
+    height: 4px;
+    background: #e0c097;
+    border-radius: 2px;
+    transition: width 0.3s ease;
+}
+
+.content h2:hover::after, .content h3:hover::after {
+    width: 100%;
+}
+
+.content p {
+    margin: 0 0 20px;
+    line-height: 1.8;
+    font-size: 18px;
+    color: #dcdcdc;
+    background-color: #3a3a3a;
+    border-left: 5px solid #e0c097;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
+}
+
+footer{
+    text-align: center;
+}
+
+/* Estilos Responsivos */
+@media (max-width: 768px) {
+    .content-wrapper {
+        flex-direction: column;
+        margin: 70px auto 20px;
+    }
+
+    .sections {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .content-display {
+        margin-left: 0;
+        padding: 15px;
+    }
+}
